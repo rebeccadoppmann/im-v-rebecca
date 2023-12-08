@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senf dazu Home</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/d25e73434b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">Senf dazu</h2>
+            </a>
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <!--<li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                        <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign up</a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="fa-regular fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+    
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <!--<a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                    <span>Sign up</span>
+                </a>-->
+            </div>
+        </nav>
+    </header>
+    
+    <!--Suche-Funktion-->
+    
+    <div class="search-form-container container" id="search-form-container">
+    
+        <div class="form-container-inner">
+    
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="Was suchst du?">
+                <button class="btn form-btn" type="submit">
+                    <i class="fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <span class="form-note">Oder drücke ESC, um das Fenster zu schliessen.</span>
+    
+        </div>
+    
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="fa-magnifying-glass"></i>
+        </button>
+    
+    </div>
+
+    <!-- 22. Blog-Post auf der Seite einrichten-->
+
+    <section class="blog-post section-header-offset">
+        <div class="blog-post-container container">
+            <!-- Infos zum Post, wie gehabt im anderen HTML-->
+            <div class="blog-post-data">
+                <h3 class="title blog-post-title">Brintey Spears und Ehemann Sam trennen sich</h3>
+                <div class="article-data">
+                    <span>17.11.2023</span>
+                    <span class="article-data-spacer"></span>
+                    <span>Lesezeit 3 Minuten</span>
+                </div>
+                <img src="./bilder/venue.png" alt="">
+            </div>
+            <!-- Wegen responsiv muss hier nochmals ein Container hin. So kann es eifacher ajustiert werden im js-->
+            <div class="container">
+                <p>
+                    Die Pop-Ikone Britney Spears und ihr langjähriger Partner Sam Asghari haben sich angeblich getrennt, so informierte eine anonyme Quelle in Los Angeles.
+                    Die Nachricht kommt überraschend für Fans der Sängerin, die in den letzten Jahren vermehrt öffentliche Unterstützung für Britneys Kampf um ihre Vormundschaft ausgedrückt haben. 
+                </p> 
+                <p>
+                    Die Beziehung zwischen Britney Spears und Sam Asghari begann im Jahr 2016, als sie sich am Set des Musikvideos zu Britneys Hit "Slumber Party" kennenlernten. 
+                    Die beiden wurden häufig auf roten Teppichen und in den sozialen Medien als glückliches Paar gezeigt.
+                </p>
+                <p>
+                    Die genauen Gründe für die angebliche Trennung sind derzeit nicht bekannt, da weder Britney Spears noch Sam Asghari offizielle Statements dazu abgegeben haben. 
+                    Die Fans der Sängerin verfolgen gespannt die Entwicklungen und hoffen auf weitere Informationen. 
+                </p>
+
+                <div class="author d-grid">
+                    <div class="author-image-box">
+                        <img src="./bilder/rebecca.jpeg" alt="" class="article-image">
+                    </div>
+                    <div class="author-about">
+                        <h3 class="author-name">Rebecca Doppmann</h3>
+                        <p>Ihre Leidenschaft für People-Journalismus wurde ihr dank einem Schweizer-Illustrierten-Abo auf den 6. Geburtstag  quasi in die Wiege gelegt.</p>
+                        <ul class="list social-media">
+                            <li class="list-item">
+                                <a href="https://www.instagram.com/rebeccaelizabeth.d/?hl=de" class="list-link"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="https://www.facebook.com/rebecca.doppmann" class="list-link"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- 18. Footer hinzufügen -->
+<footer class="footer section">
+
+    <div class="footer-container container d-grid">
+        
+        <div class="company-data">
+            <a href="./index.html">
+                <h2 class="logo">Senf dazu</h2>
+            </a>
+            <p class="company-description">Senf dazu ist ein wöchentlicher People-Podcast mit den wichtigsten News aus der Welt der Schönen und Reichen.</p>
+            
+            <ul class="list social-media">
+                <li class="list-item">
+                    <a href="https://www.instagram.com/rebeccaelizabeth.d/?hl=de" class="list-link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.facebook.com/rebecca.doppmann" class="list-link"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+            </ul>
+
+            <span class="copyright-notice">&copy;2023 SenfDazu. Alle Rechte vorbehalten.</span>
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Kategorien</h6>
+            
+            <ul class="footer-list list">
+                <li class="list-item">
+                    <a href="kategorieHollywood.html" class="list-link">Hollywood</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieRoyals.html" class="list-link">Royals</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieNational.html" class="list-link">National</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieRealityTV.html" class="list-link">Reality-TV</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieSport.html" class="list-link">Sport</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieMusik.html" class="list-link">Musik</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Format</h6>
+            
+            <ul class="footer-list list">
+                <!--<li class="list-item">
+                    <a href="#" class="list-link">Kontaktiere mich</a>
+                </li>-->
+                <li class="list-item">
+                    <a href="uebermich.html" class="list-link">Über mich</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+</footer>
+
+<script src="js/main.js"></script> 
+</body>
+</html>

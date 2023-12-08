@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senf dazu</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/d25e73434b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="header" id="header">
+    <nav class="navbar container">
+        <a href="./index.html">
+                <h2 class="logo">Senf dazu</h2>
+            </a>
+        <div class="menu" id="menu">
+            <ul class="list">
+                <!--<li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                        <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign up</a>
+                    </li>-->
+            </ul>
+        </div>
+        <div class="list list-right">
+            <button class="btn place-items-center" id="theme-toggle-btn">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="btn place-items-center" id="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <!--<a href="#" class="list-link screen-sm-hidden">Sign in</a>
+            <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                <span>Sign up</span>
+            </a>-->
+        </div>
+    </nav>
+</header>
+
+<!--Suche-Funktion-->
+
+<div class="search-form-container container" id="search-form-container">
+
+    <div class="form-container-inner">
+
+        <form action="" class="form">
+            <input class="form-input" type="text" placeholder="Was suchst du?">
+            <button class="btn form-btn" type="submit">
+                <i class="fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <span class="form-note">Oder drücke ESC, um das Fenster zu schliessen.</span>
+
+    </div>
+
+    <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="fa-magnifying-glass"></i>
+    </button>
+
+</div>
+
+
+
+<!-- 14. Vergangene Posts einfügen -->
+<section class="older-posts section">
+
+    <div class="container">
+        <p class="abstandbenötigt"></p>
+        <h2 class="title section-title" data-name="#Hollywood">#Hollywood</h2>
+
+        <div class="older-posts-grid-wrapper d-grid">
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/aquaman.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>15.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>5 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Neuer Aquaman-Film mit Amber Heard</h3>
+                    <p class="article-description">Im zweiten Teil des epischen Aquaman-Abenteuers findet sich Arthur Curry, alias Aquaman, in einem brisanten Unterwasserpolitikum wieder, als eine alte Bedrohung aus den Tiefen auftaucht. </p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/marvel.jpeg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>15.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>4 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Schlechtester Marvel-Film aller Zeiten</h3>
+                    <p class="article-description">Der All-Girls-Club rettet das Weltall. Aber diversitätspolitische Hektik macht noch kein Kino.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/ryan reynolds.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>13.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>5 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Ryan Reynolds mit Liebeserklärung</h3>
+                    <p class="article-description">
+                        Blake Lively und Ryan Reynolds, Hollywoods Lieblingspaar, zeigen weiterhin ihre humorvolle Seite in der Öffentlichkeit.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/jimmy kimmel.jpeg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>16.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>8 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Jimmy Kimmel moderiert die Oscars</h3>
+                    <p class="article-description">
+                        Der renommierte Filmpreis wird im kommenden Jahr zum 96. Mal vergeben. Zum vierten Mal darf Jimmy Kimmel durch den Abend führen.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/patrick dempsey.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>14.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>6 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Sexiest Man Alive</h3>
+                    <p class="article-description">
+                        Patrick Dempsey ist Sexiest Man Alive. Und das zurecht! Ein Rückblick auf den Start seiner Karriere.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/weinstein.png" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>12.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>10 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Neue Details zum Weinstein-Fall</h3>
+                    <p class="article-description">Der Skandal um Harvey Weinstein, einflussreicher Hollywood-Produzent, erschütterte die Unterhaltungsbranche, als zahlreiche Frauen mutig ihre Erfahrungen mit sexuellem Missbrauch und Belästigung offenlegten. </p>
+
+                </div>
+            </a>
+
+        </div>
+
+        <!--<div class="see-more-container">
+            <a href="#" class="btn see-more-btn place-items-center">See more <i class="ri-arrow-right-s-line"></i></i></a>
+        </div>-->
+
+    </div>
+
+</section>
+
+
+<!-- 18. Footer hinzufügen -->
+<footer class="footer section">
+
+    <div class="footer-container container d-grid">
+        
+        <div class="company-data">
+            <a href="./index.html">
+                <h2 class="logo">Senf dazu</h2>
+            </a>
+            <p class="company-description">Senf dazu ist ein wöchentlicher People-Podcast mit den wichtigsten News aus der Welt der Schönen und Reichen.</p>
+            
+            <ul class="list social-media">
+                <li class="list-item">
+                    <a href="https://www.instagram.com/rebeccaelizabeth.d/?hl=de" class="list-link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.facebook.com/rebecca.doppmann" class="list-link"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+            </ul>
+
+            <span class="copyright-notice">&copy;2023 SenfDazu. Alle Rechte vorbehalten.</span>
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Kategorien</h6>
+            
+            <ul class="footer-list list">
+                <li class="list-item">
+                    <a href="kategorieHollywood.html" class="list-link">Hollywood</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieRoyals.html" class="list-link">Royals</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieNational.html" class="list-link">National</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieRealityTV.html" class="list-link">Reality-TV</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieSport.html" class="list-link">Sport</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieMusik.html" class="list-link">Musik</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Format</h6>
+            
+            <ul class="footer-list list">
+                <!--<li class="list-item">
+                    <a href="#" class="list-link">Kontaktiere mich</a>
+                </li>-->
+                <li class="list-item">
+                    <a href="uebermich.html" class="list-link">Über mich</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+</footer>
+
+
+ <script src="js/main.js"></script> 
+</body>
+</html>

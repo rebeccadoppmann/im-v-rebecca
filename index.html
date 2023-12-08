@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senf dazu</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/d25e73434b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="header" id="header">
+    <nav class="navbar container">
+        <a href="./index.html">
+                <h2 class="logo">Senf dazu</h2>
+            </a>
+        <div class="menu" id="menu">
+            <ul class="list">
+                <!--<li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                        <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign up</a>
+                    </li>-->
+            </ul>
+        </div>
+        <div class="list list-right">
+            <button class="btn place-items-center" id="theme-toggle-btn">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="btn place-items-center" id="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!--<a href="#" class="list-link screen-sm-hidden">Sign in</a>
+            <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                <span>Sign up</span>
+            </a>-->
+        </div>
+    </nav>
+</header>
+
+<!--Suche-Funktion-->
+
+<div class="search-form-container container" id="search-form-container">
+
+    <div class="form-container-inner">
+
+        <form action="" class="form">
+            <input class="form-input" type="text" placeholder="Was suchst du?">
+            <button class="btn form-btn" type="submit">
+                <i class="fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <span class="form-note">Oder drücke ESC, um das Fenster zu schliessen.</span>
+
+    </div>
+
+    <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="fa-magnifying-glass"></i>
+    </button>
+
+</div>
+
+
+
+
+<!--8. Artikel darstellen auf der Website-->
+
+<section class="featured-articles section section-header-offset">
+    <!--d-grid macht jedes Element zum Grid-Container-->
+    <div class="featured-articles-container container d-grid">
+
+        <div class="featured-content d-grid">
+
+            <div class="headline-banner">
+                <h3 class="headline fancy-border">
+                    <span class="place-items-center">Breaking news</span>
+                </h3>
+                <span class="headline-description">Trennung bei Britney Spears</span>
+            </div>
+            <!--Bild im Post-->
+            <a href="./postGeorge.html" class="article featured-article featured-article-1">
+                <img src="./bilder/george.jpg" alt="" class="article-image">
+                <span class="article-category">Royals</span>
+                <!--Infos zum Post-->
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>17.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>Lesezeit 3 Mintuen</span>
+                    </div>
+
+                    <h3 class="title article-title">Süsser Papi-Sohn-Moment</h3>
+
+                </div>
+            </a>
+            <!--Is immer derselbe Aufbau-->
+            <a href="./postBritney.html" class="article featured-article featured-article-2">
+                <img src="./bilder/venue.png" alt="" class="article-image">
+                <span class="article-category">Musik</span>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>17.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>Lesezeit 8 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Überrachende Trennung bei den Spears</h3>
+
+                </div>
+            </a>
+
+            <a href="./postMadonna.html" class="article featured-article featured-article-3">
+                <img src="./bilder/madonna.jpg" alt="" class="article-image">
+                <span class="article-category">Hollywood</span>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>20.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>Lesezeit 5 Mintuen</span>
+                    </div>
+
+                    <h3 class="title article-title">Madonna über ihren Kult-Kuss</h3>  
+
+                </div>
+            </a>
+
+        </div>
+
+        <!-- 11. Sidebar (mit zusätzlichen Artikeln, die aber nicht Breaking News sind) wird erstellt-->
+        <div class="sidebar d-grid">
+
+            <h3 class="title featured-content-title">Trends</h3>
+
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-img-box">
+                    <span class="trending-number place-items-center">01</span>
+                    <img src="./bilder/rachel zegler.jpg" alt="" class="article-image">
+                </div>
+                <!--Infos zum Artikel-->
+                <div class="trending-news-data">
+
+                    <div class="article-data">
+                        <span>20.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>5 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Rachel Zegler in Kritik</h3>
+
+                </div>
+            </a>
+            <!-- a-tag ist in sich geschlossen und kann so oft hier wiederholt werden, wie der Bedarf ist-->
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-img-box">
+                    <span class="trending-number place-items-center">02</span>
+                    <img src="./bilder/patrick dempsey.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+
+                    <div class="article-data">
+                        <span>16.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>2 Mintuen</span>
+                    </div>
+
+                    <h3 class="title article-title">Sexiest Man Alive 2023!</h3>
+
+                </div>
+            </a>
+
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-img-box">
+                    <span class="trending-number place-items-center">03</span>
+                    <img src="./bilder/zac efron.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+
+                    <div class="article-data">
+                        <span>22.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>7 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Zac Efron ist neu verliebt</h3>
+
+                </div>
+            </a>
+
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-img-box">
+                    <span class="trending-number place-items-center">04</span>
+                    <img src="./bilder/stand johnny.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+
+                    <div class="article-data">
+                        <span>18.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>8 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Depp-Doku auf Netflix</h3>
+
+                </div>
+            </a>
+
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-img-box">
+                    <span class="trending-number place-items-center">05</span>
+                    <img src="./bilder/luca haenni.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="trending-news-data">
+
+                    <div class="article-data">
+                        <span>25.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>3 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Hännis neue Hütte</h3>
+
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- 14. Vergangene Posts einfügen -->
+<section class="older-posts section">
+
+    <div class="container">
+
+        <h2 class="title section-title" data-name="Vergangene News">Vergangene News</h2>
+
+        <div class="older-posts-grid-wrapper d-grid">
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/aquaman.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>15.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>5 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Neuer Aquaman-Film mit Amber Heard</h3>
+                    <p class="article-description">Im zweiten Teil des epischen Aquaman-Abenteuers findet sich Arthur Curry, alias Aquaman, in einem brisanten Unterwasserpolitikum wieder, als eine alte Bedrohung aus den Tiefen auftaucht. </p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/cathy hummels.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>15.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>4 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Wer ist Cathy Hummels' Verehrer?</h3>
+                    <p class="article-description">Cathy Hummels erhält erneut eine Rose von einem unbekannten Verehrer.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/ryan reynolds.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>13.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>5 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Ryan Reynolds mit Liebeserklärung</h3>
+                    <p class="article-description">
+                        Blake Lively und Ryan Reynolds, Hollywoods Lieblingspaar, zeigen weiterhin ihre humorvolle Seite in der Öffentlichkeit.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/meghan kate.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>16.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>8 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Gespräch zwischen Meghan und Kate</h3>
+                    <p class="article-description">
+                        In einem Gespräch zwischen Meghan und Kate teilen die königlichen Schwägerinnen lachend Erinnerungen über ihre gemeinsamen Erlebnisse und Herausforderungen im Rampenlicht.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/shirin david.jpg" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>14.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>6 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Shirin David in Zürich</h3>
+                    <p class="article-description">
+                        Das Shirin David Konzert in Zürich versetzte die Fans in einen musikalischen Rausch, als die Künstlerin mit energiegeladenen Performances und mitreißender Bühnenpräsenz die Bühne beherrschte.</p>
+
+                </div>
+            </a>
+
+            <a href="#" class="article d-grid">
+                <div class="older-posts-article-image-wrapper">
+                    <img src="./bilder/weinstein.png" alt="" class="article-image">
+                </div>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>12.11.2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>10 Minuten</span>
+                    </div>
+
+                    <h3 class="title article-title">Neue Details zum Weinstein-Fall</h3>
+                    <p class="article-description">Der Skandal um Harvey Weinstein, einflussreicher Hollywood-Produzent, erschütterte die Unterhaltungsbranche, als zahlreiche Frauen mutig ihre Erfahrungen mit sexuellem Missbrauch und Belästigung offenlegten. </p>
+
+                </div>
+            </a>
+
+        </div>
+
+        <!--<div class="see-more-container">
+            <a href="#" class="btn see-more-btn place-items-center">See more <i class="ri-arrow-right-s-line"></i></i></a>
+        </div>-->
+
+    </div>
+
+</section>
+
+ <!-- 15. Tags hinzufügen -->
+ <section class="popular-tags section">
+
+    <div class="container">
+
+        <h2 class="title section-title" data-name="Beliebte Themen">Beliebte Themen</h2>
+
+        <div class="popular-tags-container d-grid">
+
+            <a href="kategorieHollywood.html" class="article">
+                <span class="tag-name">#Hollywood</span>
+                <img src="./bilder/hollywood.jpeg" alt="" class="article-image">
+            </a>
+
+            <a href="kategorieRoyals.html" class="article">
+                <span class="tag-name">#Royals</span>
+                <img src="./bilder/royals.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="kategorieNational.html" class="article">
+                <span class="tag-name">#National</span>
+                <img src="./bilder/beatrice egli.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="kategorieRealityTV.html" class="article">
+                <span class="tag-name">#Reality-TV</span>
+                <img src="./bilder/reality tv.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="kategorieSport.html" class="article">
+                <span class="tag-name">#Sport</span>
+                <img src="./bilder/federer.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="kategorieMusik.html" class="article">
+                <span class="tag-name">#Musik</span>
+                <img src="./bilder/selena gomez.jpg" alt="" class="article-image">
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- 18. Footer hinzufügen -->
+<footer class="footer section">
+
+    <div class="footer-container container d-grid">
+        
+        <div class="company-data">
+            <a href="./index.html">
+                <h2 class="logo">Senf dazu</h2>
+            </a>
+            <p class="company-description">Senf dazu ist ein wöchentlicher People-Podcast mit den wichtigsten News aus der Welt der Schönen und Reichen.</p>
+            
+            <ul class="list social-media">
+                <li class="list-item">
+                    <a href="https://www.instagram.com/rebeccaelizabeth.d/?hl=de" class="list-link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.facebook.com/rebecca.doppmann" class="list-link"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+            </ul>
+
+            <span class="copyright-notice">&copy;2023 SenfDazu. Alle Rechte vorbehalten.</span>
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Kategorien</h6>
+            
+            <ul class="footer-list list">
+                <li class="list-item">
+                    <a href="kategorieHollywood.html" class="list-link">Hollywood</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieRoyals.html" class="list-link">Royals</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieNational.html" class="list-link">National</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieRealityTV.html" class="list-link">Reality-TV</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieSport.html" class="list-link">Sport</a>
+                </li>
+                <li class="list-item">
+                    <a href="kategorieMusik.html" class="list-link">Musik</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Format</h6>
+            
+            <ul class="footer-list list">
+                <!--<li class="list-item">
+                    <a href="#" class="list-link">Kontaktiere mich</a>
+                </li>-->
+                <li class="list-item">
+                    <a href="uebermich.html" class="list-link">Über mich</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+</footer>
+
+
+ <script src="js/main.js"></script> 
+</body>
+</html>
